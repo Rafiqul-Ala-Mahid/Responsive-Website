@@ -1,0 +1,149 @@
+body{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.banner{
+    display: flex;
+    margin-top: 3%;
+    background-color: rgb(10, 9, 9);
+    color: azure;
+    height: 492px;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.banner1{
+    width: 55%;
+    padding-top: 2%;
+}
+.banner1 p{
+    margin-bottom: 7%;
+}
+.banner1 a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: brown;
+}
+.banner1 a i{
+    padding-left: 1%;
+}
+.banner2{
+    width: 45%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.banner2 img{
+    width: 80%;
+}
+
+.middle{
+    display: flex;
+}
+.fixed{
+    top: 1px;
+    left: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-left: 70px;
+    padding-top: 20px;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgb(39, 35, 35);
+}
+.fixed div{
+    text-align: center;
+    margin-bottom: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: rgb(238, 244, 248);
+}
+.fixed div a{
+    text-decoration: none;
+    color: rgb(31, 34, 36);
+    padding-top: 20px;
+}
+
+.fixed div:hover{
+    background-color: antiquewhite;
+}
+#blog{
+    background-color: brown;
+}
+#blog a{
+    color: aliceblue;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-right: 5%;
+    margin-left: 2%;
+    width: 1000px;
+}
+.grid div{
+    margin: 1%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.grid a{
+    text-decoration: none;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 70%;
+    font-size: 15px;
+    padding: 3%;
+    border: 1px solid black;
+    color: black;
+}
+
+.grid div div{
+    display: flex;
+    flex-direction: row;
+}
+
+.grid div div div{
+    display: flex;
+    width: 50%;
+}
+.grid div div div p{
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-left: 10%;
+}
+.grid div div div i{
+    margin-top: 4%;
+    color: rgb(80, 83, 86);
+}
+footer{
+    background-color: black;
+    padding-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+footer h2{
+    color: azure;
+    text-align: center;
+    padding-top: 7%;
+    margin-bottom: 8%;
+}
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 9%;
+    font-size: 12px;
+}
