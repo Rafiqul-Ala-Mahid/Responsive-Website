@@ -1,10 +1,10 @@
-body{
+body {
     font-family: 'Merriweather', serif;
     font-size: 20px;
     margin-bottom: 0;
 }
 
-.banner{
+.banner {
     display: flex;
     margin-top: 3%;
     background-color: rgb(10, 9, 9);
@@ -18,49 +18,57 @@ body{
     margin-right: 5%;
 }
 
-.banner1{
+.banner1 {
     width: 55%;
     padding-top: 2%;
 }
-.banner1 p{
+
+.banner1 p {
     margin-bottom: 7%;
 }
-.banner1 a{
+
+.banner1 a {
     text-decoration: none;
     color: aliceblue;
     padding: 3%;
     border-radius: 10px;
     background-color: brown;
 }
-.banner1 a i{
+
+.banner1 a i {
     padding-left: 1%;
 }
-.banner2{
+
+.banner2 {
     width: 45%;
     padding-top: 5%;
     padding-left: 5%;
 }
-.banner2 img{
+
+.banner2 img {
     width: 80%;
 }
 
-.middle{
+.middle {
     display: flex;
 }
-.fixed{
-    top: 1px;
+
+.fixed {
+    position: absolute;
+    top: 2;
     left: 2;
     display: flex;
     flex-direction: column;
     margin-top: 1%;
-    margin-left: 70px;
+    margin-left: 5%;
     padding-top: 20px;
     width: 300px;
     height: 250px;
     border-radius: 10px;
     background-color: rgb(39, 35, 35);
 }
-.fixed div{
+
+.fixed div {
     text-align: center;
     margin-bottom: 4%;
     margin-left: 5%;
@@ -71,36 +79,42 @@ body{
 
     background-color: rgb(238, 244, 248);
 }
-.fixed div a{
+
+.fixed div a {
     text-decoration: none;
     color: rgb(31, 34, 36);
     padding-top: 20px;
 }
 
-.fixed div:hover{
+.fixed div:hover {
     background-color: antiquewhite;
 }
-#blog{
+
+#blog {
     background-color: brown;
 }
-#blog a{
+
+#blog a {
     color: aliceblue;
 }
-.grid{
+
+.grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-right: 5%;
-    margin-left: 2%;
-    width: 1000px;
+    margin-left: 27%;
+    width: 65%;
 }
-.grid div{
+
+.grid div {
     margin: 1%;
     padding: 3%;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
 }
-.grid a{
+
+.grid a {
     text-decoration: none;
     margin-top: 5%;
     margin-left: 2%;
@@ -111,46 +125,60 @@ body{
     color: black;
 }
 
-.grid div div{
+.grid div div {
     display: flex;
     flex-direction: row;
 }
 
-.grid div div div{
+.grid div div div {
     display: flex;
     width: 50%;
 }
-.grid div div div p{
+
+.grid div div div p {
     margin-top: 0%;
     padding-top: 0%;
     margin-left: 10%;
 }
-.grid div div div i{
+
+.grid div div div i {
     margin-top: 4%;
     color: rgb(80, 83, 86);
 }
-footer{
+
+#tab {
+    display: none;
+}
+
+footer {
     background-color: black;
     padding-bottom: 5%;
     padding-right: 0%;
     margin-left: 0%;
     margin-right: 0%;
 }
-footer h2{
+
+footer h2 {
     color: azure;
     text-align: center;
     padding-top: 7%;
     margin-bottom: 8%;
 }
-footer a{
+
+.contact a {
     text-decoration: none;
     color: aliceblue;
     padding-left: 9%;
     font-size: 12px;
 }
 
-@media only screen and (max-width:688px){
-    body{
+.foot-icon {
+    display: none;
+}
+
+/*  Mobile devices  */
+@media only screen and (max-width:688px) {
+    body {
         margin-left: 0%;
         margin-top: 0%;
         padding-top: 0%;
@@ -158,8 +186,9 @@ footer a{
         padding-right: 0%;
         font-size: 15px;
     }
-    .banner{
-        grid-template-columns: repeat(1,1fr);
+
+    .banner {
+        grid-template-columns: repeat(1, 1fr);
         width: 100%;
         margin-left: 0%;
         margin-bottom: 0%;
@@ -169,34 +198,119 @@ footer a{
         align-items: center;
         flex-direction: column;
     }
-    .fixed{
+
+    .fixed {
+        position: relative;
         background-color: white;
-        margin-left: 50px;
+        margin-left: 12%;
         justify-content: space-between;
     }
-    .middle{
+
+    .middle {
         display: flex;
         flex-direction: column;
         margin-right: 0%;
         padding-right: 0%;
     }
-    .grid{
-        grid-template-columns: repeat(1,1fr);
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
         width: auto;
         margin-left: 8%;
+        margin-right: 0%;
+        padding-right: 0%;
     }
-    footer{
+
+    footer {
         width: 100%;
         margin-right: 0%;
     }
-    footer div{
+
+    .contact {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-right: 8%;
     }
-    footer div a{
+
+    footer div a {
         margin-bottom: 5%;
     }
-    
+
+    .foot-icon {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .foot-icon a {
+        display: block;
+        text-decoration: none;
+        color: antiquewhite;
+    }
+
+    /*  Table devices  */
+    @media only screen and (min-width:688px) and (max-width:992px) {
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .banner {
+            height: 30rem;
+            padding-bottom: 2%;
+        }
+
+        .banner1 {
+            margin-top: 0%;
+            margin-bottom: 1%;
+            font-size: 10px;
+        }
+
+        .banner2 img {
+            width: 100%;
+        }
+
+        .middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .fixed {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 0%;
+            width: 70%;
+            height: 2rem;
+            border-radius: 10px;
+            align-content: space-around;
+            justify-content: space-evenly;
+            align-items: stretch;
+        }
+
+        .fixed div a {
+            text-decoration: none;
+            color: rgb(31, 34, 36);
+            padding-top: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* margin-right: 5%; */
+            margin-top: 10%;
+            padding-left: 0%;
+            /* margin-left: 27%; */
+            width: 65%;
+        }
+        #tab{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: aliceblue;
+            padding: 20px;
+            background-color: brown;
+        }
+    }
 }
